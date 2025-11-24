@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "840165972659",
+    "project_id": "notificacionespush-859a4",
+    "storage_bucket": "notificacionespush-859a4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840165972659:android:e610b89ae6161ad814aec6",
+        "android_client_info": {
+          "package_name": "com.uso_android.parcialfinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLyJHxKXB8ROVg8GKq_1HHgRisjOHW6D0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

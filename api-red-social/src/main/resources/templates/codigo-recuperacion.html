@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Recuperacion de contraseña</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f2f4f7;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        .email-wrapper {
+            padding: 40px 0;
+            background: #f2f4f7;
+            width: 100%;
+        }
+
+        .card {
+            width: 380px;
+            background: #ffffff;
+            padding: 30px 25px;
+            border-radius: 14px;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        .logo {
+            margin-bottom: 15px;
+        }
+
+        .logo img {
+            width: 90px;
+            height: 90px;
+            border-radius: 12px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .text {
+            color: #555;
+            font-size: 15px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .code-box {
+            background: #e8f0fe;
+            color: #1a73e8;
+            border: 1px solid #d2e3fc;
+            padding: 15px;
+            font-size: 26px;
+            font-weight: bold;
+            border-radius: 10px;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+        }
+
+        .footer-text {
+            font-size: 13px;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="email-wrapper">
+    <tr>
+        <td align="center">
+
+            <table border="0" cellspacing="0" cellpadding="0" class="card">
+                <tr>
+                    <td>
+
+                        <div class="logo">
+                            <img src="cid:logoKusktan" alt="Logo">
+                        </div>
+
+                        <h2>Recuperacion de contraseña</h2>
+
+                        <p class="text">
+                            Hola <strong th:text="${usuario.nombreUsuario}">Usuario</strong>,
+                            <br>
+                            Recibimos una solicitud para recuperar tu contraseña.
+                            <br>
+                            Usa el siguiente código para continuar:
+                        </p>
+
+                        <div class="code-box">
+                            <span th:text="${codigo}">123456</span>
+                        </div>
+
+                        <p class="footer-text">
+                            Si no solicitaste este proceso, puedes ignorar este correo.
+                        </p>
+
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
